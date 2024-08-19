@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent-container {
+    background-color: beige;
+    border: 2px solid black;
+    width: 75vw;
+    height: 75vw;
+    padding: 5px;
+/* position: relative; */
+}
+
+.child {
+    padding: 25px;
+}
+/* 
+? static
+default
+postion in relation to elements
+top left bottom right and z-index were not effected
+ */
+.child1 {
+    /* position: static; */
+    border: 2px solid red;
+    background-color: red;
+}
+/*
+? relative
+just like static
+can be changed using top, left, bottom, right, and z-index
+vaules are relative to orginal static postion
+ */
+
+.child2 {
+    /* position: relative; */
+    top: 25px;
+    left: 25px;
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+}
+/* 
+? absolute 
+removes the lement from the flow
+postions it relative to parent container
+if parent is static it will move outside parent container
+if parent is relative it will move inside parent container
+positioning defiend by top,right,left,bottom and z-index
+ */
+
+.child3 {
+    /* position: absolute; */
+    /* z-index: -1; */
+    top: 0px;
+    left: 0px;
+    border: 2px solid green;
+    background-color: green;
+}/* 
+    ? Fixed
+    * like absolute
+    * positioned to viewport
+    * doesn't move when scrolling
+    * position defined by top, bottom, left, right, and z-index
+*/
+.child4 {
+    /* position: fixed; */
+    top: 0px;
+    left: 0px;
+    border: 2px solid teal;
+    background-color: teal;
+}
+
+/*
+mix of relative and fixed
+relative to the flow
+used for scrolling
+
+*/
+.child5 {
+    /* position: sticky; */
+    top:25px;
+    border: 2px solid gray;
+    background-color: gray;
+}
+/*
+? Display property
+treats an element as block or inline
+block is created top to bottom spans full page width
+inline is created side by side spans  full page content
+*/
+
+.display-container{
+    margin-top: 2em;
+}
+.block-container{
+    border: 2px solid black;
+    margin: 5px;
+
+    /* display:inline; */
+}
+.inline-element{
+    /* display: block; */
+}
+/* 
+? inline-block
+lets you set the width and the height 
+ */
+.inline-block {
+    border: 2px solid black;
+    margin: 5px;
+    /* display: inline-block; */
+}
+
+/* 
+? float
+ shifts elements left or right
+ */
+.float-container {
+    margin-top: 2em;
+    border: 2px solid blue;
+    width: 50vw;
+    height: 25vw;
+}
+
+.float-box {
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    background-color: rebeccapurple;
+    color: white;
+    /* float: right; */
+}
